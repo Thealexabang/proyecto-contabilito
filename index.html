@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contablito - Ventas</h1>
+    <div id="registroDeProducto">
+        <form action="">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" placeholder="Debe ser único">
+            <br>
+            <label for="producto">Nombre del Producto</label>
+            <input type="text" class="form-control" id="producto">
+            <br>
+            <label for="descripcion">Descripción</label>
+            <input type="text" class="form-control" id="descripcion">
+            <br>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad">
+            <br>
+            <label for="costo">Costo</label>
+            <input type="number" class="form-control" id="costo" placeholder="En pesos">
+            </form>
+    </div>
+    <br>
+    <br>
+<!-- compra venta de mercaderia, fecha de transaccion, 
+    producto, cantidad de producto,costo unitario, subtotal, IVA, total -->
+        <div id="movimientos">
+            <form action="" id="compra">
+
+                <select name="" id="compraVenta">
+                    <option value="comprar">Comprar</option>
+                    <option value="vender">Vender</option>
+                </select>
+                <br>
+                <label for="fechaTransaccion"> Fecha de Transacción:</label>
+                <input type="date" id="fechaTransaccion:">
+                <br>
+                <label for="producto"> Producto: </label>
+                <input type="text" id="producto:">
+                <br>
+                <label for="cantidadProducto"> Cantidad: </label>
+                <input type="number" id="cantidadProducto:">
+                <br>
+                <label for="costoUnitario"> Costo Unitario: </label>
+                <input type="number" id="costoUnitario">
+                <br>
+                <label for="subtotal"> Subtotal: </label>
+                <input type="number" id="subtotal:">
+                <br>
+                <label for="iva"> IVA 22%</label>
+                <br>
+                <label for="total"> Total: </label>
+                <input type="number" id="total:">
+                <br>
+                <button type="submit">Comprar</button>
+            </form>
+                <br>
+        </div>
+      </div id="informacion">
+        <table>
+            <tr>
+                <th>Productos</th>
+                <th>Nombre</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
