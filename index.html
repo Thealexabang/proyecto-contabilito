@@ -16,14 +16,19 @@
     <form action="" id="formRegistro">
         <label for="producto">Nombre: </label>
         <input type="text" id="producto">
+        <br>
         <label for="id">ID: </label>
         <input type="number" id="id" placeholder="Debe ser único">
+        <br>
         <label for="descripcion">Descripción: </label>
         <input type="text" id="descripcion">
+        <br>
         <label for="cantidad">Cantidad: </label>
         <input type="number" id="cantidad">
+        <br>
         <label for="costo">Costo unitario: </label>
-        <input type="number" id="costo" placeholder="En pesos"><br><br>
+        <input type="number" id="costo" placeholder="En pesos"> <br>
+        <br>
         <button type="submit" id="submit">Registrar Producto</button>
     </form>
 </div>
@@ -36,22 +41,29 @@
             <option>Compra</option>
             <option>Venta</option>
         </select>
-        <label for="s-fecha">Fecha: </label>
+        <br>
+        <label for="s-fecha">Fecha:</label>
         <input type="date" id="s-fecha">
+        <br>
         <label for="s-id">ID: </label>
         <input type="number" id="s-id">
+        <br>
         <label for="s-cantidad">Cantidad: </label>
         <input type="number" id="s-cantidad">
+        <br>
         <label for="s-costo">Costo unitario: </label>
-        <input type="number" id="s-costo"><br><br>
+        <input type="number" id="s-costo">
     </form>
     <form id="total">
         <label for="s-subtotal">Subtotal: </label>
-        <input type="number" id="s-subtotal" disabled value="100"><br>
+        <input type="number" id="s-subtotal" disabled value="100">
+        <br>
         <label for="s-iva">IVA</label>
-        <input type="number" id="s-iva" disabled value="22"><br>
+        <input type="number" id="s-iva" disabled value="22">
+        <br>
         <label for="s-total">Total: </label>
-        <input type="number" id="s-total" disabled value="122"><br>
+        <input type="number" id="s-total" disabled value="122"> <br>
+        <br>
         <button type="submit">Registrar Movimiento: </button>
     </form>
 </div>

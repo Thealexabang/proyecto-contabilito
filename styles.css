@@ -3,14 +3,20 @@ h1 {
 }
 
 #registroProductos {
-    margin-left: 3%;
+    margin-left: 20%;
+    margin-top: 1%;
+    float: left;
 }
 
 #registroMovimientos {
-    margin-left: 3%;
+    margin-right: 20%;
+    margin-top: 0.2%;
+    float: right;
+
 }
 
 #tablaProductos {
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 20%;
 }
