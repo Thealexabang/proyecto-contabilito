@@ -1,22 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    background-color: rgb(255, 232, 211);
+}
+
 h1 {
     text-align: center;
 }
 
 #registroProductos {
-    margin-left: 20%;
-    margin-top: 1%;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 400px;
+    margin-top: 25px;
+}
+#registroProductos form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+#registroProductos form button{
+    margin-top: 10px;
 }
 
 #registroMovimientos {
-    margin-right: 20%;
-    margin-top: 0.2%;
-    float: right;
-
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 400px;
+    margin-top: 25px;
+}
+#registroMovimientos form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+#registroMovimientos form button{
+    margin-top: 10px;
 }
 
 #tablaProductos {
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20%;
+    margin-top: 30px;
+    min-width: 405px;
+}
+@media (min-width: 500px) {
+    #tablaProductos {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 405px;
 }

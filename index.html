@@ -11,100 +11,88 @@
 
 <body>
     <h1>Barraca Ladrillos SRL</h1>
-    <div id="registroProductos">
-    <h2>Registro de producto</h2>
-    <form action="" id="formRegistro">
-        <label for="producto">Nombre: </label>
-        <input type="text" id="producto">
-        <br>
-        <label for="id">ID: </label>
-        <input type="number" id="id" placeholder="Debe ser único">
-        <br>
-        <label for="descripcion">Descripción: </label>
-        <input type="text" id="descripcion">
-        <br>
-        <label for="cantidad">Cantidad: </label>
-        <input type="number" id="cantidad">
-        <br>
-        <label for="costo">Costo unitario: </label>
-        <input type="number" id="costo" placeholder="En pesos"> <br>
-        <br>
-        <button type="submit" id="submit">Registrar Producto</button>
-    </form>
-</div>
-    <br>
-<div id="registroMovimientos">
-    <h2>Registro de Movimientos</h2>
-    <form action="" id="formMovimiento">
-        <label for="movimiento">Tipo de Movimiento</label>
-        <select name="" id="movimiento">
-            <option>Compra</option>
-            <option>Venta</option>
-        </select>
-        <br>
-        <label for="s-fecha">Fecha:</label>
-        <input type="date" id="s-fecha">
-        <br>
-        <label for="s-id">ID: </label>
-        <input type="number" id="s-id">
-        <br>
-        <label for="s-cantidad">Cantidad: </label>
-        <input type="number" id="s-cantidad">
-        <br>
-        <label for="s-costo">Costo unitario: </label>
-        <input type="number" id="s-costo">
-    </form>
-    <form id="total">
-        <label for="s-subtotal">Subtotal: </label>
-        <input type="number" id="s-subtotal" disabled value="100">
-        <br>
-        <label for="s-iva">IVA</label>
-        <input type="number" id="s-iva" disabled value="22">
-        <br>
-        <label for="s-total">Total: </label>
-        <input type="number" id="s-total" disabled value="122"> <br>
-        <br>
-        <button type="submit">Registrar Movimiento: </button>
-    </form>
-</div>
-<br>
-<div id="tablaProductos">
-    <h2>Stock de Productos</h2>
-    <table class="table table-hover">
-        <tbody>
-            <tr>
-                <td>Nombre</td>
-                <td>ID</td>
-                <td>Descripción</td>
-                <td>Cantidad</td>
+    <div class="contenedor">
+        <div id="registroProductos">
+            <h2>Registro de producto</h2>
+            <form action="" id="formRegistro">
+                <label for="producto">Nombre: </label>
+                <input type="text" id="producto">
+                <label for="id">ID: </label>
+                <input type="number" id="id" placeholder="Debe ser único">
+                <label for="descripcion">Descripción: </label>
+                <input type="text" id="descripcion">
+                <label for="cantidad">Cantidad: </label>
+                <input type="number" id="cantidad">
+                <label for="costo">Costo unitario: </label>
+                <input type="number" id="costo" placeholder="En pesos">
+                <button type="submit" id="submit">Registrar Producto</button>
+            </form>
+        </div>
+        <div id="registroMovimientos">
+            <h2>Registro de Movimientos</h2>
+            <form action="" id="formMovimiento">
+                <label for="movimiento">Tipo de Movimiento</label>
+                <select name="" id="movimiento">
+                    <option>Compra</option>
+                    <option>Venta</option>
+                </select>
+                <label for="s-fecha">Fecha:</label>
+                <input type="date" id="s-fecha">
+                <label for="s-id">ID: </label>
+                <input type="number" id="s-id">
+                <label for="s-cantidad">Cantidad: </label>
+                <input type="number" id="s-cantidad">
+                <label for="s-costo">Costo unitario: </label>
+                <input type="number" id="s-costo">
+            </form>
+            <form id="total">
+                <label for="s-subtotal">Subtotal: </label>
+                <input type="number" id="s-subtotal" disabled value="100">
+                <label for="s-iva">IVA</label>
+                <input type="number" id="s-iva" disabled value="22">
+                <label for="s-total">Total: </label>
+                <input type="number" id="s-total" disabled value="122">
+                <button type="submit">Registrar Movimiento: </button>
+            </form>
+        </div>
+    </div>
+    <div id="tablaProductos">
+        <h2>Stock de Productos</h2>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td>Nombre</td>
+                    <td>ID</td>
+                    <td>Descripción</td>
+                    <td>Cantidad</td>
+                </tr>
+            </tbody>
+            <tr class="table-danger">
+                <td>Arena</td>
+                <td>004</td>
+                <td>Bolsa 10kg</td>
+                <td>50/200</td>
             </tr>
-        </tbody>
-        <tr class="table-danger">
-            <td>Arena</td>
-            <td>004</td>
-            <td>Bolsa 10kg</td>
-            <td>50/200</td>
-        </tr>
-        <tr class="table-warning">
-            <td>Portland</td>
-            <td>003</td>
-            <td>Bolsa 25kg</td>
-            <td>300/600</td>
-        </tr>
-        <tr class="table-success">
-            <td>Bloques</td>
-            <td>002</td>
-            <td>Comunes</td>
-            <td>1000/1000</td>
-        </tr>
-        <tr class="table-success">
-            <td>Ladrillos</td>
-            <td>001</td>
-            <td>Reflactarios</td>
-            <td>5000/2500</td>
-        </tr>
-    </table>
-</div>
+            <tr class="table-warning">
+                <td>Portland</td>
+                <td>003</td>
+                <td>Bolsa 25kg</td>
+                <td>300/600</td>
+            </tr>
+            <tr class="table-success">
+                <td>Bloques</td>
+                <td>002</td>
+                <td>Comunes</td>
+                <td>1000/1000</td>
+            </tr>
+            <tr class="table-success">
+                <td>Ladrillos</td>
+                <td>001</td>
+                <td>Reflactarios</td>
+                <td>5000/2500</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
